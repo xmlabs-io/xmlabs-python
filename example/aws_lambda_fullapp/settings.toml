@@ -1,0 +1,8 @@
+[default]
+name = "TEST"
+
+[dev]
+name = "DEV"
+
+[prod] 
+name = "PROD"
