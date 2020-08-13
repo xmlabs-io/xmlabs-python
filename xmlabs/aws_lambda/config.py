@@ -22,3 +22,5 @@ settings = Dynaconf(
     #environments=True,
 )
 
+def xmlabs_settings(env):
+    return settings.from_env(env)

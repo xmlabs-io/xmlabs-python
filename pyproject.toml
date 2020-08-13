@@ -11,13 +11,14 @@ boto3 = "^1.14.35"
 requests = "^2.24.0"
 
 [tool.poetry.dev-dependencies]
+pytest = "^6.0.1"
 
 [tool.tox]
 legacy_tox_ini  = """
 [tox]
 isolated_build = True
-envlist = py35, py36, py37, py38
-
+#envlist = py35, py36, py37, py38
+envlist = py38
 [testenv]
 deps = pytest
 

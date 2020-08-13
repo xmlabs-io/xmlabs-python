@@ -269,7 +269,7 @@ dynaconf = "^3.0.0"
 requests = "^2.24.0"
 
 [package.source]
-reference = "4a0a5b227d51895772f9ae0f0d677670aea88be8"
+reference = "69f34afe5324770eea6b661dc5db799d8b9f6414"
 type = "git"
 url = "https://github.com/xmlabs-io/xmlabs-python.git"
 [metadata]

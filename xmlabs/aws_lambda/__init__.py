@@ -1,2 +1,2 @@
-from .handler import lambda_handler
+from .handler import xmlabs_lambda_handler
 

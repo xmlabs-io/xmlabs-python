@@ -1,9 +1,9 @@
-from .config import settings
+from .config import xmlabs_settings
 from .env import get_environment
 from functools import wraps
 
 
-def lambda_handler(fn):
+def xmlabs_lambda_handler(fn):
     @wraps(fn)
     def wrapped(*args, **kwargs):
         env, config = None , None
@@ -17,8 +17,7 @@ def lambda_handler(fn):
             raise 
 
         try:
-            config = settings.from_env(env)
-            #config.setenv(env)
+            config = xmlabs_settings(env)
             if not config:
                 raise Exception("No Configuration found")
         except Exception as ex:
